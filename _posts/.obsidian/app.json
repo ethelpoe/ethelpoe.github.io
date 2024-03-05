@@ -2,5 +2,8 @@
   "attachmentFolderPath": "assets",
   "trashOption": "none",
   "alwaysUpdateLinks": true,
-  "newLinkFormat": "shortest"
+  "newLinkFormat": "relative",
+  "readableLineLength": true,
+  "foldHeading": true,
+  "showInlineTitle": false
 }
