@@ -11,11 +11,50 @@ tags:
 pin: false
 ---
 
-  
+Ok, comencemos:
+1.- Lo primero sera descargar e instalar  [Visual Studio Community](https://www.visualstudio.com/downloads) asegúrate de instalar los workloads **.NET desktop development** and **.NET Core cross-platform development**.
+2.- instala **_nanoFramework_ extension for Visual Studio** 
+3.- Restart VS
 
-## Nano Framework
+#### Cargando el firmware a la placa usando nanoFirmwareFlasher
+Ahora tenemos que flashear nuestra placa utilizando [nano Firmware Flasher (nanoff)](https://github.com/nanoframework/nanoFirmwareFlasher)
+necesitas saber en que puerto esta conectado tu dispositivo (puedes validar esto en tu administrador de dispositivos)
 
-Esta es una prueba de que puedo hacer
+```html
+<ha-alert alert-type="info"> This is an info alert — check it out! </ha-alert>
+```
+
+
+==Importante: Debes tener instalado el driver para la version de windows de tu esp32==
+
+```c#
+using System.Threading;
+using Windows.Devices.Gpio;
+
+class Program
+{
+    static void Main()
+    {
+        // Especifica el número del pin donde está conectado el LED
+        int ledPinNumber = 2;
+
+        // Configura el pin como salida
+        GpioPin ledPin = GpioController.GetDefault().OpenPin(ledPinNumber);
+        ledPin.SetDriveMode(GpioPinDriveMode.Output);
+
+        // Enciende el LED y espera por un tiempo
+        ledPin.Write(GpioPinValue.High);
+        Thread.Sleep(1000);
+
+        // Apaga el LED
+        ledPin.Write(GpioPinValue.Low);
+
+        // Mantén la aplicación en ejecución (puedes cerrarla manualmente después)
+        Thread.Sleep(Timeout.Infinite);
+    }
+}
+
+```
 
 
 
