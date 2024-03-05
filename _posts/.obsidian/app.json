@@ -1,1 +1,6 @@
-{}
+{
+  "attachmentFolderPath": "assets",
+  "trashOption": "none",
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "shortest"
+}
