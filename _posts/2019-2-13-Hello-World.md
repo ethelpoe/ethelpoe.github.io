@@ -12,7 +12,7 @@ pin: false
 ---
 
 Ok, comencemos:
-1.- Lo primero sera descargar e instalar  [Visual Studio Community](https://www.visualstudio.com/downloads) asegúrate de instalar los workloads **.NET desktop development** and **.NET Core cross-platform development**.
+1.- Lo primero sera descargar e instalar  [Visual Studio Community](https://www.visualstudio.com/downloads) asegúrate de instalar los workloads **.NET desktop development** and **.NET Core cross-platform development y al menos  [.NET 6.0 Runtime (or .NET 6.0 SDK)](https://dotnet.microsoft.com/download) ** 
 2.- instala **_nanoFramework_ extension for Visual Studio** 
 3.- Restart VS
 
@@ -20,12 +20,10 @@ Ok, comencemos:
 Ahora tenemos que flashear nuestra placa utilizando [nano Firmware Flasher (nanoff)](https://github.com/nanoframework/nanoFirmwareFlasher)
 necesitas saber en que puerto esta conectado tu dispositivo (puedes validar esto en tu administrador de dispositivos)
 
-```html
-<ha-alert alert-type="info"> This is an info alert — check it out! </ha-alert>
-```
-
-
 ==Importante: Debes tener instalado el driver para la version de windows de tu esp32==
+click here: [Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
+
+![[assets/Pasted image 20240304220601.png]]
 
 ```c#
 using System.Threading;
@@ -62,3 +60,5 @@ class Program
 ## Referencias
 
 [Getting Started NanoFramework](https://docs.nanoframework.net/content/getting-started-guides/getting-started-managed.html)
+
+[Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
