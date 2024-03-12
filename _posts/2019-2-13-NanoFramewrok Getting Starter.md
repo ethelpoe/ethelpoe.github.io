@@ -13,14 +13,17 @@ pin: false
 
 Ok, comencemos:
 1.- Lo primero sera descargar e instalar  [Visual Studio Community](https://www.visualstudio.com/downloads) asegúrate de instalar los workloads **.NET desktop development** and **.NET Core cross-platform development y al menos  [.NET 6.0 Runtime (or .NET 6.0 SDK)](https://dotnet.microsoft.com/download) ** 
+
 2.- instala **_nanoFramework_ extension for Visual Studio** 
+
 3.- Restart VS
 
 #### Cargando el firmware a la placa usando nanoFirmwareFlasher
 Ahora tenemos que flashear nuestra placa utilizando [nano Firmware Flasher (nanoff)](https://github.com/nanoframework/nanoFirmwareFlasher)
 necesitas saber en que puerto esta conectado tu dispositivo (puedes validar esto en tu administrador de dispositivos)
 
-==Importante: Debes tener instalado el driver para la version de windows de tu esp32==
+Importante: Debes tener instalado el driver para la version de windows de tu esp32
+
 click here: [Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
 ![[assets/Pasted image 20240304220601.png]]
@@ -53,6 +56,8 @@ class Program
 }
 
 ```
+
+>[!NOTE]
 
 
 

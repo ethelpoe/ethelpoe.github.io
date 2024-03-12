@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2019-2-13-Hello-World.md",
+                "file": "2019-2-13-NanoFramewrok Getting Starter.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 378.5
   },
   "right": {
     "id": "018ed923052a75a8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2019-2-13-Hello-World.md",
+                "file": "2019-2-13-NanoFramewrok Getting Starter.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2019-2-13-Hello-World.md",
+                "file": "2019-2-13-NanoFramewrok Getting Starter.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2019-2-13-Hello-World.md"
+                "file": "2019-2-13-NanoFramewrok Getting Starter.md"
               }
             }
           }
@@ -149,6 +148,14 @@
   },
   "active": "3b611ec905b211a3",
   "lastOpenFiles": [
+    "2019-02-13-introducing-reverie-jekyll-theme.md",
+    "2019-7-27-super-long-article.md",
+    "2019-7-27-this-post-demonstrates-post-content-styles.md",
+    "2019-7-28-super-short-article.md",
+    "2019-08-08-no-title-posts.md",
+    "2019-8-12-code-snippets.md",
+    "2019-12-11-pullquotes.md",
+    "2019-2-13-NanoFramewrok Getting Starter.md",
     "assets/Pasted image 20240304220601.png",
     "assets/Pasted image 20240304213401.png",
     "assets"
