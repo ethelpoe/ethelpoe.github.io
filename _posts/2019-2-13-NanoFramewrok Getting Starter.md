@@ -38,29 +38,75 @@ class Program
 {
     static void Main()
     {
-        // Especifica el número del pin donde está conectado el LED
-        int ledPinNumber = 2;
+	 // Especifica el número del pin donde está conectado el LED
+	  int ledPinNumber = 2;
 
-        // Configura el pin como salida
-        GpioPin ledPin = GpioController.GetDefault().OpenPin(ledPinNumber);
-        ledPin.SetDriveMode(GpioPinDriveMode.Output);
+	  // Configura el pin como salida
+	  GpioPin ledPin;
+	  GpioController gpio = new GpioController();
+	  ledPin = gpio.OpenPin(ledPinNumber);
+	  ledPin.SetPinMode(PinMode.Output);
 
-        // Enciende el LED y espera por un tiempo
-        ledPin.Write(GpioPinValue.High);
-        Thread.Sleep(1000);
+  while (true)
+  {
+      // Enciende el LED y espera por un tiempo
+      ledPin.Write(PinValue.High);
+      Thread.Sleep(250);
 
-        // Apaga el LED
-        ledPin.Write(GpioPinValue.Low);
+      // Apaga el LED
+      ledPin.Write(PinValue.Low);
 
-        // Mantén la aplicación en ejecución (puedes cerrarla manualmente después)
-        Thread.Sleep(Timeout.Infinite);
+      Thread.Sleep(125);
+  }
     }
 }
 
 ```
 
+A continuación un ejemplo, encendiendo un buzzer:
 
+```c#
+using System.Device.Gpio;
+using System.Threading;
 
+namespace Buzzer
+{
+    class Buzzer
+    {
+        private GpioPin buzzerPin;
+
+        public Buzzer(int pinNumber)
+        {
+            GpioController gpio = new GpioController();
+            buzzerPin = gpio.OpenPin(pinNumber);
+            buzzerPin.SetPinMode(PinMode.Output);
+        }
+
+        public void Beep(int duration)
+        {
+            buzzerPin.Write(PinValue.High);
+            Thread.Sleep(duration);
+            buzzerPin.Write(PinValue.Low);
+        }
+    }
+    public class Program
+    {
+        static void Main()
+        {
+            const int BUZZER_PIN = 2; 
+
+            Buzzer myBuzzer = new Buzzer(BUZZER_PIN);
+
+            while (true)
+            {
+                myBuzzer.Beep(500); // Beep for 0.5 seconds
+                Thread.Sleep(1000); // Wait for 1 second
+            }
+        }
+    }
+}
+
+```
 
 
 
