@@ -44,7 +44,7 @@ Your Jekyll blog will often be viewable immediately at <https://yourgithubuserna
 
 ### Step 2) Customize and view your site
 
-Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
+Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, {% include pullquote.html quote="It is typically placed in a larger or distinctive typeface and on the same page." %} Disqus commenting and social icons here.
 
 Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
@@ -80,8 +80,8 @@ The generated [RSS feed](https://en.wikipedia.org/wiki/RSS) of your blog can be 
 
 The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap>. You can see the example sitemap feed over [here](https://www.amitmerchant.com/reverie/sitemap).
 
+> This quote will change your life. It will reveal the secrets of the universe, and all the wonders of humanity. Don't misuse it.
+
 ## License
 
 MIT
-
-
