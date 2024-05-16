@@ -28,7 +28,7 @@ necesitas saber en que puerto esta conectado tu dispositivo (puedes validar esto
 
 click here: [Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers?tab=downloads)
 
-![[_posts/assets/Pasted image 20240304213401.png]]
+![[Pasted image 20240304220601.png]]
 
 ```c#
 using System.Threading;
