@@ -1,4 +1,15 @@
-## Building my first FPV Drone
+---
+title: Building my first FPV Drone
+author: ethelpoe
+date: 2019-08-09 20:55:00 +0800
+categories:
+  - Blogging
+  - Tutorial
+tags:
+  - Programing
+  - Drone
+pin: false
+---
 
 Material needed:
 
