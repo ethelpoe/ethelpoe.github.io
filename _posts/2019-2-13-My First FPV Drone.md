@@ -15,7 +15,7 @@ Material needed:
 
 - x1 MPU6050 Sensor
 - x1 NRF24L01 Transceiver
-- x1 HC-6035 Mini Buzzer Pasivo
+- x1 Mini Buzzer (activo)
 - x1 PFV camera [Link](https://www.amazon.com/gp/product/B06XJMQQ6Y?ie=UTF8&psc=1&linkCode=sl1&tag=maximaginatio-20&linkId=b023b3cabef5d05abcbbdf043b147588&language=en_US&ref_=as_li_ss_tl)
 
 - x4 Coreless Motors (6mm) [Link](https://www.amazon.com/gp/product/B01N9ETA9Z?ie=UTF8&psc=1&linkCode=sl1&tag=maximaginatio-20&linkId=d6b1913793401950960ed46fa36f05a5&language=en_US&ref_=as_li_ss_tl) 
@@ -47,6 +47,16 @@ Material needed:
 - FPV Googles
 - FTDI converter ( Mini USB a TTL adaptador)
 - Pin Headers
+
+La idea es utilizar un esp32 para crear el controlador de vuelo de un dron.
+
+Lo primero sera actualizar la version de nuestro arduino IDE a la version mas nueva, al momento de este tutorial era la 2.3.3. despues nos vamos a ir a `tools -> manage libraries` y alli buscamos una biblioteca llamada "MPU6050 por Electronic Cats o Jeff Rowberg" y la instalamos. 
+
+==Este manual se ira actualizando conforme avancemos en el proyecto...==  
+
+
+
+
 
 ---
 ### References
