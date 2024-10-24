@@ -1,5 +1,5 @@
 ---
-title: Ejercicios Finales del Curso Básico de MATLAB/Octave
+title: Ejercicios del Curso Básico de MATLAB/Octave
 author: ethelpoe
 date: 2024-10-23 20:55:00 +0800
 categories:
