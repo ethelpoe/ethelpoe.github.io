@@ -28,7 +28,7 @@ Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]
 
 suponiendo que estas utilizando windows
 
-![alt text](image.png)
+![alt text](![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
 
 y lo instalas.
 
@@ -135,14 +135,14 @@ void moverLED(int origen, int destino) {
 }
 ```
 
-ahora escribiremos el contenido del archivo "linkedList.h"
+ahora escribiremos el contenido del archivo "Node.h"
 ```c++
 #pragma once
 template <typename T>
 class Node{
   public:
     T data;
-Node* next;
+    Node* next;
 
 Node(T data): data(data), next(nullptr){}
 };
