@@ -57,7 +57,8 @@ ahora conectamos el esp32 a nuestra computadora despues
  - Led.h
  - Node.h
  
-dentro de nuestro archivo LinkedList.h pondremos lo siguiente:
+dentro de nuestro archivo main.ino pondremos lo siguiente:
+el archivo `.ino` es el que genera automaticamante al crear un "new sketch"
 
 ```c++
 #include <Arduino.h>
@@ -133,4 +134,20 @@ void moverLED(int origen, int destino) {
   }
 }
 ```
+
+ahora escribiremos el contenido del archivo "linkedList.h"
+```c++
+#pragma once
+template <typename T>
+class Node{
+  public:
+    T data;
+Node* next;
+
+Node(T data): data(data), next(nullptr){}
+};
+
+```
+
+
 
