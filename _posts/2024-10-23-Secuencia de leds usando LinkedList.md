@@ -79,7 +79,7 @@ void setup() {
   Serial.begin(115200);
 
   // Inicializar los pines de los LEDs
-  for (int i = 0; i < sizeof(ledPins) / sizeof(ledPins[0]); i++) {
+  for (int i = 0; i < lengthof(ledPins) / lengthof(ledPins[0]); i++) {
     pinMode(ledPins[i], OUTPUT);
     
     // Añadir LEDs a la lista inicialmente en apagado
@@ -92,7 +92,7 @@ void setup() {
 
 void loop() {
   // Ejemplo: parpadeo secuencial de los LEDs
-  for (int i = 0; i < ledList.size(); i++) {
+  for (int i = 0; i < ledList.length(); i++) {
     LED* led = ledList.get(i);
     digitalWrite(led->pin, HIGH); // Encender el LED
     delay(500);
@@ -113,7 +113,7 @@ void agregarLED(int pin) {
 
 // Función para eliminar un LED de la lista
 void eliminarLED(int posicion) {
-  if (posicion < ledList.size()) {
+  if (posicion < ledList.length()) {
     LED* led = ledList.remove(posicion);
     delete led;
     Serial.println("LED eliminado de la secuencia");
@@ -124,7 +124,7 @@ void eliminarLED(int posicion) {
 
 // Función para cambiar el orden de los LEDs (reordenar)
 void moverLED(int origen, int destino) {
-  if (origen < ledList.size() && destino < ledList.size()) {
+  if (origen < ledList.length() && destino < ledList.length()) {
     LED* led = ledList.remove(origen);
     ledList.add(destino, led);
     Serial.println("LED movido en la secuencia");
@@ -136,6 +136,7 @@ void moverLED(int origen, int destino) {
 
 ahora escribiremos el contenido del archivo "Node.h"
 ```c++
+//Node.h
 #pragma once
 template <typename T>
 class Node{
@@ -145,6 +146,145 @@ class Node{
 
 Node(T value): value(value), next(nullptr){}
 };
+
+```
+
+Ahora escribiremos el codigo de nuestro archivo "LinkedList.h"
+
+```c++
+// LinkedList.h
+#pragma once
+#include "Node.h"
+#include <Arduino.h>
+
+template <typename T>
+class LinkedList {
+private:
+    Node<T>* head;
+    Node<T> *tail;
+    int length;
+
+public:
+    LinkedList() : head(nullptr),tail(nullptr) length(0) {}
+
+    ~LinkedList() {
+        clear();
+    }
+
+    void append(T value) {
+        Node<T>* newNode = new Node<T>(value);
+        if (length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail->next = newNode;
+            tail = newNode;
+        }
+        length++;
+    }
+
+
+    void deleteFirst(){
+        if (length == 0) return;
+        Node<T> *temp = head;
+        if (length == 1)
+        {
+            head == nullptr;
+            tail == nullptr;
+        }
+        else
+        {
+            head = head->next;
+        }
+        delete temp;
+        length--;
+    }
+
+    Node<T> *get(int index){
+        if (index < 0 || index >= length)
+        {
+            return nullptr;
+        }
+        Node<T> *temp = head;
+        for (int i = 0; i < index; i++)
+        {
+            temp = temp->next;
+        }
+        return temp;
+    }
+
+
+    void deleteLast(){
+        if (length == 0)
+            return;
+        Node<T> *temp = head;
+        if (length == 1)
+        {
+            head = nullptr;
+            tail = nullptr;
+        }
+        else
+        {
+            Node<T> *pre = head;
+            while (temp->next)
+            {
+                pre = temp;
+                temp = temp->next;
+            }
+            tail = pre;
+            tail->next = nullptr;
+        }
+        delete temp;
+        length--;
+    }
+
+    void deleteNode(int index)
+    {
+        if (index < 0 || index >= length)
+        {
+            return;
+        }
+        if (index == 0)
+        {
+            return deleteFirst();
+        }
+        if (index == length - 1)
+        {
+            return deleteLast();
+        }
+        Node<T> *prev = get(index - 1);
+        Node<T> *temp = prev->next;
+        prev->next = temp->next;
+        delete temp;
+        length--;
+    }
+
+    void print() const {
+        Node<T>* temp = head;
+        while (temp != nullptr) {
+            Serial.print(temp->value);
+            Serial.print(" -> ");
+            temp = temp->next;
+        }
+        Serial.println("null");
+    }
+
+    void clear() {
+        while (head) {
+            Node<T>* temp = head;
+            head = head->next;
+            delete temp;
+        }
+        length = 0;
+    }
+
+    int getlength() const {
+        return length;
+    }
+};
+
+
+
 
 ```
 
