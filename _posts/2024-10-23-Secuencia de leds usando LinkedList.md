@@ -53,7 +53,6 @@ ahora conectamos el esp32 a nuestra computadora despues
 
  - LinkedList.h
  - main.ino
- - Led.h
  - Node.h
  
 dentro de nuestro archivo main.ino pondremos lo siguiente:
@@ -283,10 +282,8 @@ public:
     }
 };
 
-
-
-
 ```
 
+Ahora solo faltaria el
 
 
