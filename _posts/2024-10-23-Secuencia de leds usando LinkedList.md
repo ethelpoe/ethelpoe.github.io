@@ -20,7 +20,6 @@ Material necesario:
 - Paquete cable dupont (macho - macho,  hembra-macho, hembra - hembra)
 - 1x protoboard (culquier cantidad de puntos)
 - cable datos para el microcontrolador
-  
 
 Lo primero sera descargar el driver para el esp32 puedes leer el tutorial en el siguiente link [click aqui](https://randomnerdtutorials.com/install-esp32-esp8266-usb-drivers-cp210x-windows/)
 
@@ -28,7 +27,7 @@ Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]
 
 suponiendo que estas utilizando windows
 
-![alt text](![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
+(![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
 
 y lo instalas.
 
@@ -141,10 +140,10 @@ ahora escribiremos el contenido del archivo "Node.h"
 template <typename T>
 class Node{
   public:
-    T data;
+    T value;
     Node* next;
 
-Node(T data): data(data), next(nullptr){}
+Node(T value): value(value), next(nullptr){}
 };
 
 ```
