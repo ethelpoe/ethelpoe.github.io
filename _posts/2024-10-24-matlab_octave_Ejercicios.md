@@ -1,5 +1,16 @@
-
-# Ejercicios Finales del Curso Básico de MATLAB/Octave
+---
+title: Ejercicios Finales del Curso Básico de MATLAB/Octave
+author: ethelpoe
+date: 2024-10-23 20:55:00 +0800
+categories:
+  - Blogging
+  - Tutorial
+tags:
+  - Programing
+  - matlap
+  - octave
+pin: false
+---
 
 ## Ejercicio 1: Simulación del Movimiento de un Proyectil
 
