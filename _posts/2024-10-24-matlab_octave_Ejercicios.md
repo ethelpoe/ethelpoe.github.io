@@ -12,7 +12,7 @@ tags:
 pin: false
 ---
 
-### Ejercicio 1: Simulación del Movimiento de un Proyectil
+Ejercicio 1: Simulación del Movimiento de un Proyectil
 
 ### **Descripción**
 Este ejercicio simula el movimiento parabólico de un proyectil. Los estudiantes ingresan un ángulo de lanzamiento y una velocidad inicial para calcular la trayectoria y visualizarla con un gráfico en 2D.
