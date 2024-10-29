@@ -31,7 +31,7 @@ suponiendo que estas utilizando windows
 
 y lo instalas.
 
-Despues tendras que abrir el programa que acabas de abrir he ir a la seccion 'tools -> manageLibrary -> ' y buscamos "Arduino_ESP32_OTA by Arduino"
+Despues tendras que abrir el programa que acabas de instalar, abrirlo he ir a la seccion `tools -> manageLibrary ->` y buscamos "Arduino_ESP32_OTA by Arduino"
 
 <img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="800" height="300" />
 
