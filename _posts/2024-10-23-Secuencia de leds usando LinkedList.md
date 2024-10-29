@@ -27,17 +27,17 @@ Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]
 
 suponiendo que estas utilizando windows
 
-![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
+<img src="https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b" width="800" height="300" />
 
 y lo instalas.
 
 Despues tendras que abrir el programa que acabas de abrir he ir a la seccion 'tools -> manageLibrary -> ' y buscamos "Arduino_ESP32_OTA by Arduino"
 
-<img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="200" height="200" />
+<img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="800" height="300" />
 
 ahora conectamos el esp32 a nuestra computadora despues buscamos nuestro ESP32 y definimos el puerto
 
- ![alt text](image-2.png)
+<img src="https://github.com/user-attachments/assets/6d0d38bb-9ae4-4607-b266-1111764bea89" width="800" height="300" />
 
  Ahora si estamos listos para cargar nuestro primer script
 
