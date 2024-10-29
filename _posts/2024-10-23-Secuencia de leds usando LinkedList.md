@@ -33,7 +33,7 @@ y lo instalas.
 
 Despues tendras que abrir el programa que acabas de abrir he ir a la seccion 'tools -> manageLibrary -> ' y buscamos "Arduino_ESP32_OTA by Arduino"
 
-![image|50](https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb)
+<img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="200" height="200" />
 
 ahora conectamos el esp32 a nuestra computadora despues buscamos nuestro ESP32 y definimos el puerto
 
