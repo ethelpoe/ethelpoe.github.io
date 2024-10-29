@@ -23,7 +23,7 @@ Material necesario:
 
 Lo primero sera descargar el driver para el esp32 puedes leer el tutorial en el siguiente link [click aqui](https://randomnerdtutorials.com/install-esp32-esp8266-usb-drivers-cp210x-windows/)
 
-Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]([https://](https://www.arduino.cc/en/software))
+Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui](https://www.arduino.cc/en/software)
 
 suponiendo que estas utilizando windows
 
