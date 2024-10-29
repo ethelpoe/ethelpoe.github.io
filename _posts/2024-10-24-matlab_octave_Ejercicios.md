@@ -14,17 +14,17 @@ pin: false
 
 Ejercicio 1: Simulación del Movimiento de un Proyectil
 
-### **Descripción**
+**Descripción**
 Este ejercicio simula el movimiento parabólico de un proyectil. Los estudiantes ingresan un ángulo de lanzamiento y una velocidad inicial para calcular la trayectoria y visualizarla con un gráfico en 2D.
 
-### **Paso a Paso**
+**Paso a Paso**
 1. Solicitar datos al usuario: ángulo en grados y velocidad inicial.
 2. Convertir el ángulo a radianes.
 3. Calcular el tiempo de vuelo total del proyectil.
 4. Calcular las posiciones del proyectil en cada instante.
 5. Graficar la trayectoria.
 
-### **Código**
+**Código**
 ```matlab
 % Solicitar datos al usuario
 angulo = input('Ingresa el ángulo de lanzamiento (en grados): ');
@@ -53,18 +53,18 @@ grid on;
 
 ---
 
-## Ejercicio 2: Generador de Fractales Simples – Conjunto de Mandelbrot
+Ejercicio 2: Generador de Fractales Simples – Conjunto de Mandelbrot
 
-### **Descripción**
+**Descripción**
 Este ejercicio genera una visualización del conjunto de Mandelbrot. Cada punto del plano complejo se itera y colorea según cuántas iteraciones toma para divergir.
 
-### **Paso a Paso**
+**Paso a Paso**
 1. Definir un plano complejo entre -2 y 1 en el eje real, y -1.5 a 1.5 en el imaginario.
 2. Iterar cada punto y verificar si pertenece al conjunto.
 3. Colorear los puntos según las iteraciones necesarias para salir del círculo de radio 2.
 4. Mostrar el fractal generado.
 
-### **Código**
+**Código**
 ```matlab
 % Parámetros de la visualización
 limite = 2; 
@@ -97,18 +97,18 @@ title('Conjunto de Mandelbrot');
 
 ---
 
-## Ejercicio 3: Procesamiento de Imágenes Básicas – Aplicación de Filtros
+Ejercicio 3: Procesamiento de Imágenes Básicas – Aplicación de Filtros
 
-### **Descripción**
+**Descripción**
 Este ejercicio introduce el procesamiento básico de imágenes al aplicar filtros de media y Sobel a una imagen en escala de grises.
 
-### **Paso a Paso**
+**Paso a Paso**
 1. Cargar una imagen en escala de grises usando `imread`.
 2. Aplicar un filtro de media para suavizar la imagen.
 3. Aplicar el filtro Sobel para detectar bordes.
 4. Mostrar las imágenes usando subplots.
 
-### **Código**
+**Código**
 ```matlab
 % Cargar la imagen
 imagen = imread('imagen_grises.jpg'); % Asegúrate de tener una imagen en escala de grises
@@ -131,9 +131,9 @@ subplot(1, 3, 3); imshow(imagen_bordes); title('Filtro Sobel');
 
 ---
 
-## Ejercicio 1: Simulación del Movimiento de un Proyectil
+Ejercicio 1: Simulación del Movimiento de un Proyectil
 
-### **Explicación**
+**Explicación**
 En este ejercicio, el movimiento del proyectil sigue la ecuación:
 - **Posición en X**: \(x(t) = v_0 \cdot \cos(\theta) \cdot t\)
 - **Posición en Y**: \(y(t) = v_0 \cdot \sin(\theta) \cdot t - \frac{1}{2} g t^2\)
@@ -145,7 +145,7 @@ Donde:
 
 El proyectil describe una trayectoria parabólica y termina cuando toca el suelo (cuando \(y = 0\)).
 
-### **Actividad sugerida 1: Modificar la gravedad**
+**Actividad sugerida 1: Modificar la gravedad**
 Permitir que el usuario seleccione un valor de gravedad diferente para simular el comportamiento en otros planetas.
 
 **Código modificado:**
@@ -178,15 +178,15 @@ Este cambio permitirá que los alumnos experimenten con la gravedad en otros pla
 
 ---
 
-## Ejercicio 2: Generador de Fractales – Conjunto de Mandelbrot
+Ejercicio 2: Generador de Fractales – Conjunto de Mandelbrot
 
-### **Explicación**
+**Explicación**
 El conjunto de Mandelbrot está formado por números complejos que no divergen cuando se aplican iterativamente la fórmula:
 - \(Z_{n+1} = Z_n^2 + C\), donde \(Z\) y \(C\) son números complejos.
 
 Los puntos que permanecen dentro de un círculo de radio 2 después de un número de iteraciones se consideran parte del conjunto.
 
-### **Actividad sugerida 1: Permitir el número de iteraciones**
+**Actividad sugerida 1: Permitir el número de iteraciones**
 Agregar la opción de que el usuario modifique el número de iteraciones para observar los cambios en la calidad del fractal.
 
 **Código modificado:**
@@ -222,14 +222,14 @@ Los estudiantes podrán ver cómo un mayor número de iteraciones genera más de
 
 ---
 
-## Ejercicio 3: Procesamiento de Imágenes Básicas – Aplicación de Filtros
+Ejercicio 3: Procesamiento de Imágenes Básicas – Aplicación de Filtros
 
-### **Explicación**
+**Explicación**
 Este ejercicio introduce la idea de filtros aplicados a imágenes.  
 - **Filtro de Media**: Suaviza la imagen reduciendo el ruido.
 - **Filtro Sobel**: Detecta bordes en la imagen resaltando los cambios de intensidad.
 
-### **Actividad sugerida 1: Cambiar el tamaño del filtro de media**
+**Actividad sugerida 1: Cambiar el tamaño del filtro de media**
 Permitir que el usuario defina el tamaño del filtro de media y observar cómo esto afecta la suavidad de la imagen.
 
 **Código modificado:**
