@@ -61,6 +61,7 @@ dentro de nuestro archivo main.ino pondremos lo siguiente:
 el archivo `.ino` es el que genera automaticamante al crear un "new sketch"
 
 ```c++
+//archivo main
 #include <Arduino.h>
 #include <LinkedList.h>  // Biblioteca LinkedList para manejar la estructura
 
