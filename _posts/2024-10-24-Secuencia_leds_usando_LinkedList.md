@@ -27,21 +27,21 @@ Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]
 
 suponiendo que estas utilizando windows
 
-<img src="https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b" width="800" height="300" />
+<img src="https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b" width="800" height="400" />
 
 y lo instalas.
 
 Despues tendras que abrir el programa que acabas de instalar, abrirlo he ir a la seccion `tools -> manageLibrary ->` y buscamos "Arduino_ESP32_OTA by Arduino"
 
-<img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="800" height="300" />
+<img src="https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb" width="800" height="400" />
 
 ahora conectamos el esp32 a nuestra computadora despues buscamos nuestro ESP32 y definimos el puerto
 
-<img src="https://github.com/user-attachments/assets/6d0d38bb-9ae4-4607-b266-1111764bea89" width="800" height="300" />
+<img src="https://github.com/user-attachments/assets/6d0d38bb-9ae4-4607-b266-1111764bea89" width="800" height="400" />
 
  Ahora si estamos listos para cargar nuestro primer script
  
-<img src="https://github.com/user-attachments/assets/c1290a4e-deed-4cbe-8234-b956d0941980" width="800" height="300" />
+<img src="https://github.com/user-attachments/assets/c1290a4e-deed-4cbe-8234-b956d0941980" width="800" height="400" />
 
 cuando hagasmos lo que indica la imagen de arriba, tendremos el equivalente de un "hola mundo" para arduino, ahora con tu esp32 conectado  y con el puerto debidamente seleccionado click en "compilar y subir".
 
