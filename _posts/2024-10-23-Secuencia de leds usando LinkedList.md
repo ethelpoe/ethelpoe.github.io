@@ -7,7 +7,7 @@ categories:
   - Tutorial
 tags:
   - Programing
-  - LL
+  - LinkedList
   - ESP32
 pin: false
 ---
@@ -35,7 +35,8 @@ Despues tendras que abrir el programa que acabas de abrir he ir a la seccion 'to
 
 ahora conectamos el esp32 a nuestra computadora despues
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb)
+
 
  buscamos nuestro ESP32 y definimos el puerto
 
