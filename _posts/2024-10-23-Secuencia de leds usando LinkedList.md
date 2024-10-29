@@ -56,7 +56,11 @@ Para nuestro proyecto tendremos varios archivos
  - LinkedList.h
  - main.ino
  - Node.h
- 
+
+En tu carpeta se deberia ver algo asi:
+
+![image](https://github.com/user-attachments/assets/08974bb8-b2c5-4266-90b7-111fb95242c4)
+
 dentro de nuestro archivo main.ino pondremos lo siguiente:
 el archivo `.ino` es el que genera automaticamante al crear un "new sketch"
 
