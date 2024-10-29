@@ -40,14 +40,18 @@ ahora conectamos el esp32 a nuestra computadora despues buscamos nuestro ESP32 y
 <img src="https://github.com/user-attachments/assets/6d0d38bb-9ae4-4607-b266-1111764bea89" width="800" height="300" />
 
  Ahora si estamos listos para cargar nuestro primer script
+ 
+<img src="https://github.com/user-attachments/assets/c1290a4e-deed-4cbe-8234-b956d0941980" width="800" height="300" />
 
- ![alt text](image-3.png)
+cuando hagasmos lo que indica la imagen de arriba, tendremos el equivalente de un "hola mundo" para arduino, ahora con tu esp32 conectado  y con el puerto debidamente seleccionado click en "compilar y subir".
 
- seguido de "new sketch"
+![image](https://github.com/user-attachments/assets/fd717d2f-c0b1-4adb-8698-8e0b0bfa1a00)
 
- y comenzamos.
+### Parte 2 de nuestro tuto.
+Ahora si sigue la parte interesante, despues de lograr subir nuestro primer codigo el led azul o rojo debe estar parpadeando.
+esto indica que todo funciona correctamente, como vimos en clase ahora tendremos que crear una secuencia de leds utilizando una `LinkedList`
 
- Para nuestro proyecto tendremos varios archivos 
+Para nuestro proyecto tendremos varios archivos 
 
  - LinkedList.h
  - main.ino
