@@ -27,13 +27,13 @@ Tendras ahora que descargar la version mas nueva del ide de arduino [click aqui]
 
 suponiendo que estas utilizando windows
 
-(![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
+![image](https://github.com/user-attachments/assets/0d75992b-34f7-437e-83b5-0191fd12c35b)
 
 y lo instalas.
 
 Despues tendras que abrir el programa que acabas de abrir he ir a la seccion 'tools -> manageLibrary -> ' y buscamos "Arduino_ESP32_OTA by Arduino"
 
-![image 200x200](https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb)
+![image](https://github.com/user-attachments/assets/807afd77-7f9b-496b-8923-690c56b56feb =200x200)
 
 ahora conectamos el esp32 a nuestra computadora despues buscamos nuestro ESP32 y definimos el puerto
 
