@@ -203,3 +203,10 @@ Desarrolla una interfaz básica en React.js para mostrar el historial de acceso 
 
 ## Conclusión
 Al finalizar este tutorial, habrás aprendido a implementar LinkedList en un sistema de control de acceso, interactuar con botones, autenticar usuarios, y guardar/exportar datos en el ESP32. Además, habrás conectado el sistema a una base de datos remota y construido una interfaz en React.js para la visualización.
+
+---
+
+## Referencias
+
+https://todomaker.com/blog/esp32-spiffs/
+
