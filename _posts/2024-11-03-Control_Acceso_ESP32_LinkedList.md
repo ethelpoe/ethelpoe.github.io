@@ -1,14 +1,20 @@
 ---
 layout: post
-title: "Proyecto de Control de Acceso con ESP32 y LinkedList"
+title: "Control de Acceso con ESP32 y LinkedList"
+author: "Francisco Macias"
+date: 2024-11-03 20:55:00 +0800
 subtitle: "Tutorial completo para implementar un sistema de acceso en C++ con ESP32"
-categories: [Proyectos, IoT, C++]
-tags: [ESP32, LinkedList, IoT, Tutorial]
+categories: 
+   - Proyectos, 
+   - IoT,
+   - C++
+tags:
+   - ESP32
+   - LinkedList
+   - IoT
+   - Tutorial
 description: "Aprende a desarrollar un sistema de control de acceso utilizando ESP32 y C++ con almacenamiento y visualización web."
-author: "Tu Nombre"
-date: YYYY-MM-DD
 ---
-
 
 # Proyecto de Control de Acceso con ESP32 y LinkedList
 
