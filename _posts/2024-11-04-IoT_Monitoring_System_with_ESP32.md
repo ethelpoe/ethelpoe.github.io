@@ -1,5 +1,20 @@
-
-# Sistema de Monitoreo IoT con ESP32
+---
+layout: post
+title: "Sistema de Monitoreo IoT con ESP32"
+author: "Francisco Macias"
+date: 2024-11-03 20:55:00 +0800
+subtitle: ""
+categories: 
+   - Proyectos, 
+   - IoT,
+   - C++
+tags:
+   - ESP32
+   - LinkedList
+   - IoT
+   - Tutorial
+description: ""
+---
 
 ## 1. Introducción y Objetivos del Proyecto
 Este proyecto tiene como objetivo crear un sistema de monitoreo ambiental utilizando un ESP32. 
