@@ -207,6 +207,6 @@ Al finalizar este tutorial, habrás aprendido a implementar LinkedList en un sis
 ---
 
 ## Referencias
+[esp32-spiffs](https://todomaker.com/blog/esp32-spiffs/)
 
-https://todomaker.com/blog/esp32-spiffs/
 
