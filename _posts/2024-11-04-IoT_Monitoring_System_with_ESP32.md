@@ -21,6 +21,8 @@ Este proyecto tiene como objetivo crear un sistema de monitoreo ambiental utiliz
 El dispositivo recogerá datos de temperatura, humedad y presión y los enviará a una plataforma IoT para almacenamiento y visualización en tiempo real. 
 La meta es diseñar un sistema modular que permita extender la funcionalidad con nuevos sensores o tipos de monitoreo.
 
+Para la elaboracion de este proyecto, necesario que el lector tenga conocimientos basicos con esp32 o el ide de arduino.
+
 ## 2. Materiales Necesarios
 - **ESP32** (modelo con conectividad WiFi)
 - **Sensor de Temperatura y Humedad** (DHT22 o DHT11)
