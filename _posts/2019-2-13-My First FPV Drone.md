@@ -12,7 +12,7 @@ pin: false
 ---
 
 Material needed:
-
+- x1 ESP32 - DEV KIT 1
 - x1 MPU6050 Sensor
 - x1 NRF24L01 Transceiver
 - x1 Mini Buzzer (activo)
