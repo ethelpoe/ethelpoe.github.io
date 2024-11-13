@@ -196,8 +196,8 @@ Aqui lo que estamos haciendo es configurando nuestro ESP32 como un webService pa
 #include <WiFi.h>
 #include <WebServer.h>
 
-const char* ssid = "Totalplay-0BA3";
-const char* password = "0BA30C338Z44F3r9";
+const char* ssid = "yourSSIDName";
+const char* password = "yourSSIDPassword";
 
 WebServer server(80);  // Servidor HTTP en el puerto 80
 
