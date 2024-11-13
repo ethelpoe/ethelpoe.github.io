@@ -11,6 +11,8 @@ tags:
 pin: false
 ---
 
+Descripción General
+Este post tiene como objetivo dar una prequeña introduccion, uso y creacion de paginas web utilizando el ReactJS.
 
 You can use visual studio code with extensions: "prittier" and "simple react snippets"
 
