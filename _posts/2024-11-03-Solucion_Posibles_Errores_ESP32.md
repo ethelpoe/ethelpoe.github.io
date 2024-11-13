@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solucion_Posibles_Errores_ESP32"
+title: "Solucion Posibles Errores ESP32"
 author: "Francisco Macias"
 date: 2024-11-03 20:55:00 +0800
 subtitle: ""
