@@ -189,11 +189,77 @@ void saveUserData(UserNode* user) {
 
 #### Paso 1: Configuración de WiFi y Envío de Datos HTTP
 - Configura el WiFi en el ESP32 para conectarse a una red.
+
+Aqui lo que estamos haciendo es configurando nuestro ESP32 como un webService para que sea capaz de recibir solicitudes HTTP.
+
 ```cpp
 #include <WiFi.h>
-const char* ssid = "your-SSID";
-const char* password = "your-PASSWORD";
-WiFi.begin(ssid, password);
+#include <WebServer.h>
+
+const char* ssid = "Totalplay-0BA3";
+const char* password = "0BA30C338Z44F3r9";
+
+WebServer server(80);  // Servidor HTTP en el puerto 80
+
+const int ledPin = 2;   // Pin donde está conectado el LED
+bool ledState = false;  // Estado del LED
+bool blinking = true;  // Controlar si el LED parpadea
+
+unsigned long previousMillis = 0;  // Tiempo previo para controlar el parpadeo
+const long interval = 500;         // Intervalo de parpadeo en milisegundos
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(ledPin, OUTPUT);  // Configurar el pin como salida
+
+  Serial.println("Conectando al WiFi...");
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("\nConectado al WiFi");
+  Serial.print("Dirección IP: ");
+  Serial.println(WiFi.localIP());  // Imprime la dirección IP asignada
+
+  // Ruta para obtener el registro de acceso
+  server.on("/access-log", HTTP_GET, []() {
+    String jsonResponse = R"([
+            {"id": 1, "name": "Juan Perez", "timestamp": "2024-11-01 14:23:01"},
+            {"id": 2, "name": "Maria Lopez", "timestamp": "2024-11-01 14:45:23"}
+        ])";
+    server.send(200, "application/json", jsonResponse);
+  });
+
+  server.on("/blink/start", HTTP_GET, []() {
+    blinking = true;
+    server.send(200, "text/plain", "Parpadeo iniciado");
+  });
+
+  server.on("/blink/stop", HTTP_GET, []() {
+    blinking = false;
+    digitalWrite(ledPin, LOW);  // Apagar el LED
+    server.send(200, "text/plain", "Parpadeo detenido");
+  });
+
+  server.begin();
+}
+
+void loop() {
+  server.handleClient();
+
+  // Control del parpadeo
+  unsigned long currentMillis = millis();  // Tiempo actual
+  if (blinking && currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;  // Actualizar el tiempo previo
+    // Cambiar el estado del LED
+    ledState = !ledState;
+    digitalWrite(ledPin, ledState ? HIGH : LOW);  // Encender o apagar el LED
+  }
+}
+
+
 ```
 
 #### Paso 2: Interfaz en React.js para Visualización
