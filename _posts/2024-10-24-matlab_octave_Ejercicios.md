@@ -12,6 +12,10 @@ tags:
 pin: false
 ---
 
+Esta publicacion sirve para que no tengas que buscar ejercicios por al web sobre temas basicos en OCTAVE y MATLAB que aunque no son lo mismo, para un nivel basico y/o aprender a realizar tus propios
+Scripts te ayudaran bastante, no se si dejarlo en una solo publicacion o si mejor soltar todos los problemas aqui, despues regresare por un feedBack
+
+
 Ejercicio 1: Simulación del Movimiento de un Proyectil
 
 **Descripción**
