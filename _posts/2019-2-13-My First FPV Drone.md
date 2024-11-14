@@ -11,6 +11,8 @@ tags:
 pin: false
 ---
 
+Este post tiene como objetivo guiarte en la creacion de tu primer dron usando los materiales mas economicos posibles, usaremos la menor cantidad de modulos posibles pero si usaremos, ya que no nos centraremos tanto en la parte electronica sino en programar nuestro propio controlador de vuelo usando el ESP32.
+
 Material needed:
 - x1 ESP32 - DEV KIT 1
 - x1 MPU6050 Sensor
