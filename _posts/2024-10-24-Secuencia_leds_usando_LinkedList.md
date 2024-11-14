@@ -12,6 +12,10 @@ tags:
 pin: false
 ---
 
+En esta publicacion estaremos realizando una practica no simple porque nada de lo que colocamos aqui es simple, pero si muy didactica, en la cual con ayuda de un linkedList controlaremos el encendido de leds.
+
+
+
 Material necesario:
 
 - 1x ESP32
