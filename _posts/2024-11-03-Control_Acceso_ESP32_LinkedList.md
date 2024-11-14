@@ -16,7 +16,6 @@ tags:
 description: "Aprende a desarrollar un sistema de control de acceso utilizando ESP32 y C++ con almacenamiento y visualización web."
 ---
 
-## Descripción General
 Este tutorial tiene como objetivo guiarte paso a paso en la creación de un sistema de control de acceso utilizando el ESP32 y C++. 
 A través de la estructura de datos LinkedList, podrás registrar entradas y salidas de usuarios, almacenarlos localmente en el ESP32 
 y enviarlos a una base de datos remota. Al final, también construiremos una interfaz web en React.js para la visualización de registros.
