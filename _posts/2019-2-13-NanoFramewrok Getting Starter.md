@@ -11,7 +11,7 @@ tags:
 pin: false
 ---
 
-Ok, comencemos:
+Ok, comencemos, en esta publicacion nos adentraremos en un nuevo mundo, al programar nuestro ya conocido esp32 pero con C#, te imaginas ? si C# ese lenguaje para paginas web y orientado a objetos, pero espera que es orientado a objetos, bueno eso lo veremos luego.
 
 1.- Lo primero sera descargar e instalar  [Visual Studio Community](https://www.visualstudio.com/downloads) asegúrate de instalar los workloads **.NET desktop development** and **.NET Core cross-platform development y al menos  [.NET 6.0 Runtime (or .NET 6.0 SDK)](https://dotnet.microsoft.com/download) ** 
 
