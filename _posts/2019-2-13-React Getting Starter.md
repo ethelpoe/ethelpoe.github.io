@@ -11,7 +11,6 @@ tags:
 pin: false
 ---
 
-Descripción General
 Este post tiene como objetivo dar una prequeña introduccion, uso y creacion de paginas web utilizando el ReactJS.
 
 You can use visual studio code with extensions: "prittier" and "simple react snippets"
@@ -23,7 +22,7 @@ React requiere Node.js y npm (Node Package Manager). Si aún no los tienes insta
 1. **Descarga Node.js**: Ve a [nodejs.org](https://nodejs.org) y descarga la versión LTS (Long Term Support).
 2. **Instala Node.js**: Sigue las instrucciones de instalación. Esto también instalará npm automáticamente.
 
-paso 2:Crear un nuevo proyecto con Create React App
+paso 2: Crear un nuevo proyecto con Create React App
 
 `npm create vite@latest react-project`
 
