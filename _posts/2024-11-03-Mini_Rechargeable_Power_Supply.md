@@ -17,22 +17,9 @@ description: ""
 ---
 
 ## 1. Descripción General
-Este proyecto tiene como objetivo crear un sistema de monitoreo ambiental utilizando un ESP32. 
-El dispositivo recogerá datos de temperatura, humedad y presión y los enviará a una plataforma IoT para almacenamiento y visualización en tiempo real. 
-La meta es diseñar un sistema modular que permita extender la funcionalidad con nuevos sensores o tipos de monitoreo.
-
-Para la elaboracion de este proyecto, necesario que el lector tenga conocimientos basicos con esp32 o el ide de arduino.
-
-## 2. Materiales Necesarios
-- **ESP32** (modelo con conectividad WiFi)
-- **Sensor de Temperatura y Humedad** (DHT22 o DHT11)
-- **Sensor de Presión Atmosférica** (BMP180 o BME280)
-- **Cables de conexión**
-- **Protoboard** (opcional para pruebas de conexión)
-- **Fuente de alimentación** (si no se alimenta a través de USB)
-- **Plataforma IoT**: ThingSpeak, Blynk, u otra de tu elección (con una cuenta configurada para recibir datos)
-
+Presented here is a robust, compact and hand-held power supply that delivers 9.2V and 5V up to 1A (approx.) and 3.3V up to 500mA. It also includes a female A-type USB connector so you can power and charge other equipment such as mobile phones. The circuit uses a single rechargeable 3.7V Li-ion battery pack (normally used in mobile phones and MP3 players). It uses dedicated Li-ion charging IC which monitors undercharge and overcharge conditions to safely charge the Li-ion battery pack
 
 
 ---
 
+https://www.electronicsforu.com/electronics-projects/hardware-diy/mini-rechargeable-power-supply
