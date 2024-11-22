@@ -17,22 +17,10 @@ description: ""
 ---
 
 ## 1. Descripción General
-Este proyecto tiene como objetivo crear un sistema de monitoreo ambiental utilizando un ESP32. 
-El dispositivo recogerá datos de temperatura, humedad y presión y los enviará a una plataforma IoT para almacenamiento y visualización en tiempo real. 
-La meta es diseñar un sistema modular que permita extender la funcionalidad con nuevos sensores o tipos de monitoreo.
-
-Para la elaboracion de este proyecto, necesario que el lector tenga conocimientos basicos con esp32 o el ide de arduino.
-
-## 2. Materiales Necesarios
-- **ESP32** (modelo con conectividad WiFi)
-- **Sensor de Temperatura y Humedad** (DHT22 o DHT11)
-- **Sensor de Presión Atmosférica** (BMP180 o BME280)
-- **Cables de conexión**
-- **Protoboard** (opcional para pruebas de conexión)
-- **Fuente de alimentación** (si no se alimenta a través de USB)
-- **Plataforma IoT**: ThingSpeak, Blynk, u otra de tu elección (con una cuenta configurada para recibir datos)
+This project is built around an MRF24WBOMA Wi-Fi module, a PIC microcontroller and a camera module using the TCP-IP protocol. The camera captures live video from a remote location. This is transmitted wirelessly through internet and can be viewed on a PC or a laptop. The design uses easily-available low-cost components and a serial peripheral interface (SPI).
 
 
 
 ---
 
+https://www.electronicsforu.com/electronics-projects/wi-fi-embedded-webcam
