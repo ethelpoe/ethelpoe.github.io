@@ -15,6 +15,7 @@ Este post tiene como objetivo guiarte en la creacion de tu primer dron usando lo
 
 Material needed:
 - x1 ESP32 - DEV KIT 1
+- x1  LDO regulator (Low dropout regulators) AMS1117-3.3
 - x1 MPU6050 Sensor
 - x1 NRF24L01 Transceiver
 - x1 Mini Buzzer (activo)
@@ -308,6 +309,158 @@ Ajustar los parámetros PID para lograr que el dron se eleve y mantenga una posi
 3. **Diagnóstico Serial**:
 
    - Se utilizan mensajes en el monitor serial para observar el estado del sistema y los resultados de los cálculos de PID en tiempo real, lo cual facilita la corrección de errores y el ajuste de los parámetros.
+  
+
+### Codigo completo
+
+```c++
+#include <Wire.h>
+#include <MPU6050.h>
+
+MPU6050 mpu;
+
+// Motor driver control pins
+const int motor1_pwm = 17;
+const int motor2_pwm = 16;
+const int motor3_pwm = 18;
+const int motor4_pwm = 19;
+
+// PID variables
+float kp = 1.0, ki = 0.02, kd = 0.5;
+float rollSetpoint = 0.0, pitchSetpoint = 0.0, yawSetpoint = 0.0;
+float rollInput, pitchInput, yawInput;
+float rollOutput, pitchOutput, yawOutput;
+float rollErrorSum = 0, pitchErrorSum = 0, yawErrorSum = 0;
+float lastRollError = 0, lastPitchError = 0, lastYawError = 0;
+
+void calibrateMPU() {
+  Serial.println("Calibrating MPU6050...");
+  int numReadings = 1000;
+  long ax_offset = 0, ay_offset = 0, az_offset = 0;
+  long gx_offset = 0, gy_offset = 0, gz_offset = 0;
+
+  for (int i = 0; i < numReadings; i++) {
+    int16_t ax, ay, az, gx, gy, gz;
+    mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+    ax_offset += ax;
+    ay_offset += ay;
+    az_offset += az - 16384; // Ajuste porque la gravedad debería ser 1g (16384 en LSB)
+    gx_offset += gx;
+    gy_offset += gy;
+    gz_offset += gz;
+
+    delay(3); // Un pequeño delay para permitir la lectura
+  }
+
+  // Promedio de las lecturas para obtener los offsets
+  ax_offset /= numReadings;
+  ay_offset /= numReadings;
+  az_offset /= numReadings;
+  gx_offset /= numReadings;
+  gy_offset /= numReadings;
+  gz_offset /= numReadings;
+
+  // Guardar los offsets en variables globales
+  mpu.setXAccelOffset(ax_offset);
+  mpu.setYAccelOffset(ay_offset);
+  mpu.setZAccelOffset(az_offset);
+  mpu.setXGyroOffset(gx_offset);
+  mpu.setYGyroOffset(gy_offset);
+  mpu.setZGyroOffset(gz_offset);
+
+  Serial.println("MPU6050 calibration completed.");
+}
+
+void setup() {
+  Serial.begin(115200);
+  delay(1000);  // Esperar para estabilizar el puerto serial
+  Serial.println("Initializing...");
+
+  // Initialize I2C
+  Serial.println("Starting I2C...");
+  Wire.begin(21, 22);
+  Serial.println("I2C started.");
+
+  // Initialize MPU6050
+  Serial.println("Initializing MPU6050...");
+  mpu.initialize();
+  Serial.println("MPU6050 initialized, testing connection...");
+  if (!mpu.testConnection()) {
+    Serial.println("MPU6050 connection failed!");
+    delay(5000);  // Espera para ver el mensaje antes de reiniciar el ESP32
+    ESP.restart(); // Reinicia el ESP32
+  } else {
+    Serial.println("MPU6050 connected successfully!");
+  }
+
+  // Calibrate MPU6050
+  calibrateMPU();
+
+  // Setup Motor PWM pins
+  Serial.println("Setting up motor PWM pins...");
+  ledcSetup(0, 1000, 8);
+  ledcSetup(1, 1000, 8);
+  ledcSetup(2, 1000, 8);
+  ledcSetup(3, 1000, 8);
+
+  ledcAttachPin(motor1_pwm, 0);
+  ledcAttachPin(motor2_pwm, 1);
+  ledcAttachPin(motor3_pwm, 2);
+  ledcAttachPin(motor4_pwm, 3);
+  Serial.println("Motor PWM pins setup completed.");
+}
+
+void loop() {
+  int16_t ax, ay, az, gx, gy, gz;
+  mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+  // Convert gyro values to degrees per second
+  rollInput = gx / 131.0;
+  pitchInput = gy / 131.0;
+  yawInput = gz / 131.0;
+
+  // PID calculations for Roll
+  float rollError = rollSetpoint - rollInput;
+  rollErrorSum += rollError;
+  rollOutput = (kp * rollError) + (ki * rollErrorSum) + (kd * (rollError - lastRollError));
+  lastRollError = rollError;
+
+  // PID calculations for Pitch
+  float pitchError = pitchSetpoint - pitchInput;
+  pitchErrorSum += pitchError;
+  pitchOutput = (kp * pitchError) + (ki * pitchErrorSum) + (kd * (pitchError - lastPitchError));
+  lastPitchError = pitchError;
+
+  // PID calculations for Yaw
+  float yawError = yawSetpoint - yawInput;
+  yawErrorSum += yawError;
+  yawOutput = (kp * yawError) + (ki * yawErrorSum) + (kd * (yawError - lastYawError));
+  lastYawError = yawError;
+
+  // Motor control signals
+  int throttle = 200;  // Valor base del throttle para despegue
+  int motor1_signal = throttle + rollOutput + pitchOutput - yawOutput;
+  int motor2_signal = throttle - rollOutput + pitchOutput + yawOutput;
+  int motor3_signal = throttle + rollOutput - pitchOutput + yawOutput;
+  int motor4_signal = throttle - rollOutput - pitchOutput - yawOutput;
+
+  // Constrain motor signals to safe range
+  motor1_signal = constrain(motor1_signal, 0, 255);
+  motor2_signal = constrain(motor2_signal, 0, 255);
+  motor3_signal = constrain(motor3_signal, 0, 255);
+  motor4_signal = constrain(motor4_signal, 0, 255);
+
+  // Write PWM signals to motors
+  ledcWrite(0, motor1_signal);
+  ledcWrite(1, motor2_signal);
+  ledcWrite(2, motor3_signal);
+  ledcWrite(3, motor4_signal);
+
+  delay(10); // Pequeño delay para estabilidad
+}
+
+```
 
 ---
 
