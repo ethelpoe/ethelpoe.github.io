@@ -135,6 +135,7 @@ Conectar y verificar la fuente de alimentación para el ESP32 y los motores.
 
 - **MPU6050** (Sensor de acelerómetro y giroscopio)
 - **ESP32**
+- **MPU6050 by Electronic Cats - Library for Arduino**
 
 ### Objetivo:
 
@@ -157,6 +158,51 @@ Conectar el sensor **MPU6050** al ESP32 y calibrarlo para obtener datos precisos
 
    - Para eliminar los sesgos de los sensores, se realizó una **calibración** inicial calculando los **offsets** del acelerómetro y giroscopio.
    - Se agregó una función `calibrateMPU()` que toma varias lecturas y promedia los valores para ajustar los **offsets**.
+  
+### Pequeño codigo de verificacion
+
+```c++
+#include <Wire.h>
+#include <MPU6050.h>
+
+MPU6050 mpu;
+
+void setup() {
+  Serial.begin(115200);
+  Wire.begin(21, 22);  // Define SDA (GPIO 21) and SCL (GPIO 22) pins for I2C
+
+  Serial.println("Initializing MPU6050...");
+  mpu.initialize();
+
+  // Check if the MPU6050 is connected
+  if (mpu.testConnection()) {
+    Serial.println("MPU6050 connection successful!");
+  } else {
+    Serial.println("MPU6050 connection failed!");
+    while (1); // Halt the program if connection fails
+  }
+}
+
+void loop() {
+  // Read raw accelerometer and gyroscope data
+  int16_t ax, ay, az;
+  int16_t gx, gy, gz;
+  mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+
+  // Print accelerometer data
+  Serial.print("Accel X: "); Serial.print(ax);
+  Serial.print(" | Accel Y: "); Serial.print(ay);
+  Serial.print(" | Accel Z: "); Serial.println(az);
+
+  // Print gyroscope data
+  Serial.print("Gyro X: "); Serial.print(gx);
+  Serial.print(" | Gyro Y: "); Serial.print(gy);
+  Serial.print(" | Gyro Z: "); Serial.println(gz);
+
+  delay(500); // Delay for readability
+}
+
+```
 
    **Fragmento del Código de Calibración**:
 
