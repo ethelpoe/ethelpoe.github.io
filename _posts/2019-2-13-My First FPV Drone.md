@@ -533,6 +533,8 @@ void loop() {
 
 [Plan your Drone](https://vayuyaan.com/blog/diy-drone-exciting-guide-to-building-your-drone/)
 
+[Youtube channel inspiration](https://www.youtube.com/watch?v=Sa6EslOHsI0)
+
 
 
 
