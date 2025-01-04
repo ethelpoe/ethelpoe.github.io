@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Wi-Fi Embedded Webcam"
+title: "Based_Code_Lock"
 author: "Francisco Macias"
 date: 2024-11-03 20:55:00 +0800
 subtitle: ""
