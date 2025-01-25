@@ -38,6 +38,7 @@ cout << &food << "\n";
 
 // Output the memory address of food with the pointer (0x6dfed4)
 cout << ptr << "\n";
+
 ```
 
 here other example of how a pointer works
