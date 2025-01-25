@@ -1,3 +1,16 @@
+---
+title: Pointer in C++
+author: ethelpoe
+date: 2025-24-01 20:55:00 +0800
+categories:
+  - Blogging
+  - Tutorial
+tags:
+  - Programing
+  - c++
+pin: false
+---
+
 
 ### Creating pointers
 We know that we can get the memory address of a variable by using the `&` operator:
