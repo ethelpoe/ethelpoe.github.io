@@ -11,8 +11,7 @@ tags:
 pin: false
 ---
 
-
-### Creating pointers
+## Creating pointers
 We know that we can get the memory address of a variable by using the `&` operator:
 
 ```c++
