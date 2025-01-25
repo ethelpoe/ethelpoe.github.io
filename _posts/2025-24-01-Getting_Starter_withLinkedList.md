@@ -12,6 +12,8 @@ tags:
 pin: false
 ---
 
+## Niveles de Desarrollo
+
 A linked list structure is a simple data structure where each element has a reference to the next element.
 
 Here the constructor 
