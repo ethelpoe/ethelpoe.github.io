@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cellphone-Based_Remote_Controller_for_Water_Pump"
+title: "Cellphone based remote controller for water pump"
 author: "Francisco Macias"
 date: 2024-11-03 20:55:00 +0800
 subtitle: ""
