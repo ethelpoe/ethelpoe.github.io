@@ -17,6 +17,7 @@ As the name suggests, it involves maintaining two pointers that traverse the dat
 These pointers dynamically adjust based on specific conditions or criteria, allowing for the efficient exploration of the data and enabling solutions with optimal time and space complexity. 
 Whenever there’s a requirement to find two data elements in an array that satisfy a certain condition, the two pointers pattern should be the first strategy to come to mind.
 
+![Screenshot 2025-01-31 181744](https://github.com/user-attachments/assets/07fe008e-79e7-4596-abf2-aabb1c7fd666)
 
 
 ---
