@@ -19,6 +19,7 @@ These pointers dynamically adjust based on specific conditions or criteria, allo
 Whenever there’s a requirement to find two data elements in an array that satisfy a certain condition, the two pointers pattern should be the first strategy to come to mind.
 
 
+
 ---
 
 ## Referencies
