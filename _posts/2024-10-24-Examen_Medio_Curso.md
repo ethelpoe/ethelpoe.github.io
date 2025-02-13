@@ -1,3 +1,15 @@
+---
+title: ExamenPrimerParcial
+author: ethelpoe
+date: 2024-10-23 20:55:00 +0800
+categories:
+  - Examen
+tags:
+  - Programing
+  - LinkedList
+pin: false
+---
+
 
 **Duración:** 60 minutos
 
