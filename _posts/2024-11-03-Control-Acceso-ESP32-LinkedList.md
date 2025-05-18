@@ -1,19 +1,15 @@
 ---
-layout: post
 title: "Control de Acceso con ESP32 y LinkedList"
-author: "Francisco Macias"
-date: 2024-11-03 20:55:00 +0800
-subtitle: "Tutorial completo para implementar un sistema de acceso en C++ con ESP32"
+date: 2025-05-17T00:00:00-04:00
 categories: 
-   - Proyectos
-   - IoT
-   - C++
+  - Proyectos
+  - IoT
+  - C++
 tags:
    - ESP32
    - LinkedList
    - IoT
    - Tutorial
-description: "Aprende a desarrollar un sistema de control de acceso utilizando ESP32 y C++ con almacenamiento y visualización web."
 ---
 
 Este tutorial tiene como objetivo guiarte paso a paso en la creación de un sistema de control de acceso utilizando el ESP32 y C++. 
@@ -33,7 +29,7 @@ y enviarlos a una base de datos remota. Al final, también construiremos una int
 3. **Librerías Necesarias:** Instala las librerías `WiFi.h` y `SPIFFS.h` desde el Gestor de Librerías en Arduino IDE.
 
 #### Paso 2: Definición de la Clase LinkedList
-```cpp
+{% highlight cpp linenos %}
 struct UserNode {
     int id;
     String name;
@@ -69,7 +65,7 @@ public:
         delete temp;
     }
 };
-```
+{% endhighlight %}
 
 #### Explicación de Conceptos
 - **Struct UserNode:** Define los datos de cada usuario y un puntero `next` que enlaza al siguiente nodo.
