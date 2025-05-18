@@ -1,6 +1,7 @@
 ---
 title: "Control de Acceso con ESP32 y LinkedList"
 date: 2025-05-17T00:00:00-04:00
+last_modified_at: 2016-03-09T16:20:02-05:00
 categories: 
   - Proyectos
   - IoT
