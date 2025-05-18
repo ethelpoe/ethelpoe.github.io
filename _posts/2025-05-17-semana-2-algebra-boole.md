@@ -17,6 +17,8 @@ En esta segunda semana del curso de Circuitos Digitales, exploraremos los fundam
 
 ### Compuerta AND
 
+![alt text](/assets/images/image.png)
+
 - Símbolo: &
 - Operación: Salida = 1 solo si todas las entradas son 1
 - Tabla de verdad (2 entradas):

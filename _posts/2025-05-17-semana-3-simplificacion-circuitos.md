@@ -81,9 +81,11 @@ AB'   | 1   1    0    0 |
 ## Ejemplo Práctico de Simplificación
 
 ### Problema Original
+
 F(A,B,C) = Σm(0,1,2,4,6)
 
 ### Paso 1: Crear la Tabla de Verdad
+
 | A | B | C | F |
 |---|---|---|---|
 | 0 | 0 | 0 | 1 |
