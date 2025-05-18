@@ -14,6 +14,10 @@ tags:
 
 Este proyecto final integra conceptos de circuitos secuenciales, timing y programación para crear una pantalla holográfica basada en el fenómeno de persistencia de la visión (POV).
 
+## Video Demostrativo
+
+[Ver en YouTube](https://www.youtube.com/watch?v=RXTmUNzOTNc)
+
 ## Fundamentos Teóricos
 
 ### Persistencia de la Visión (POV)
