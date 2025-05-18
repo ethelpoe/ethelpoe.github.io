@@ -1,20 +1,47 @@
-# Minimal Mistakes remote theme starter
+# Ethelpoe Blog
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Este es el repositorio de mi blog personal donde comparto conocimientos y experiencias sobre la intersección de la ingeniería mecánica, eléctrica y computación. El blog está construido con Jekyll y utiliza el tema Minimal Mistakes ().
 
-Contains basic configuration to get you a site with:
+## Contenido
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+El blog cubre temas como:
+- Mecatrónica
+- Sistemas Embebidos (ESP32, Arduino)
+- Desarrollo de Software
+- IoT (Internet of Things)
+- Tutoriales y Proyectos Prácticos
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+## Posts Destacados
+
+- [Control de Acceso con ESP32 y LinkedList](/blog/Control-Acceso-ESP32-LinkedList/) - Tutorial completo sobre implementación de sistemas de control de acceso
+- [Mi Primera Entrada](/blog/mi-primera-entrada/) - Post inaugural del blog
+
+## Tecnologías
+
+Este blog está construido usando:
+- [Jekyll](https://jekyllrb.com/) - Generador de sitios estáticos
+- [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) - Tema Jekyll
+- [GitHub Pages](https://pages.github.com/) - Hosting
+
+## Desarrollo Local
+
+Para ejecutar este blog localmente:
+
+1. Instalar Ruby y Bundler
+2. Clonar este repositorio
+3. Ejecutar `bundle install`
+4. Ejecutar `bundle exec jekyll serve`
+5. Abrir `http://localhost:4000` en el navegador
+
+## Contacto
+
+Puedes encontrarme en:
+- GitHub: [@ethelpoe](https://github.com/ethelpoe)
+- [Mi sitio web](https://ethelpoe.github.io)
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Ver el archivo LICENSE para más detalles.
 
 ---
 
