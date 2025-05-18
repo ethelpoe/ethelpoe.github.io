@@ -1,5 +1,5 @@
 ---
-title: "Semana 1: Reforzamiento y Abstracción en POO"
+title: "C++ POO - 1: Reforzamiento y Abstracción"
 date: 2025-05-17T10:00:00-04:00
 categories:
   - Programación II
@@ -235,3 +235,28 @@ void generarPrimosOptimizado();
 - [Compiler Explorer](https://godbolt.org/) para experimentar con el código
 
 *Este primer acercamiento a la POO establece las bases para el resto del curso, enfatizando la importancia de una buena estructura y diseño en el código.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-guia-punteros-cpp.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Guía de Punteros C++
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-2-programacion-II.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      C++ POO - 2: Estructura de Clases →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>
