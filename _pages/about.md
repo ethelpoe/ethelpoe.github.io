@@ -3,6 +3,26 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+## About Me
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+Hi! I'm a passionate **mechatronics engineer** with a strong background in **software development**, **embedded systems**, and **hardware integration**. I love building solutions that bridge the gap between the physical and digital worlds — from low-level firmware to full-stack web applications.
+
+---
+
+### What I Do
+
+- 🖥️ **Programming:** C++, Python, C#, JavaScript  
+- ⚙️ **Embedded Systems:** ESP32, Arduino, FreeRTOS, custom hardware  
+- 📡 **IoT Projects:** Communication protocols (SPI, I2C, UART, CAN, MQTT)  
+- 🌐 **Web & APIs:** RESTful APIs, React, Node.js  
+- 🛠️ **Tools:** Visual Studio, VS Code, Git, CNC, 3D printing
+
+---
+
+### Interests
+
+- AI & Robotics  
+- Ethical hacking and security-focused engineering  
+- Industrial automation  
+- Reverse engineering  
+- Strategic thinking in design & systems
