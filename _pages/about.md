@@ -11,11 +11,11 @@ Hi! I'm a passionate **mechatronics engineer** with a strong background in **sof
 
 ### What I Do
 
-- 🖥️ **Programming:** C++, Python, C#, JavaScript  
-- ⚙️ **Embedded Systems:** ESP32, Arduino, FreeRTOS, custom hardware  
-- 📡 **IoT Projects:** Communication protocols (SPI, I2C, UART, CAN, MQTT)  
-- 🌐 **Web & APIs:** RESTful APIs, React, Node.js  
-- 🛠️ **Tools:** Visual Studio, VS Code, Git, CNC, 3D printing
+- **Programming:** C++, Python, C#, JavaScript  
+- **Embedded Systems:** ESP32, Arduino, FreeRTOS, custom hardware  
+- **IoT Projects:** Communication protocols (SPI, I2C, UART, CAN, MQTT)  
+- **Web & APIs:** RESTful APIs, React, Node.js  
+- **Tools:** Visual Studio, VS Code, Git, CNC, 3D printing
 
 ---
 

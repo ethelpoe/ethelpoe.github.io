@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Ethelpoe
+title: Work & Experiments
 email:
 description: >- # this means to ignore newlines until "baseurl:"
 
@@ -62,7 +62,7 @@ plugins:
 
 author:
   name   : "Francisco Macias"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/logo.png"
   bio    : "Passionate about exploring the synergy between mechanical, electrical, and computer engineering. Sharing insights and innovations in the world of Mechatronics."
   links:
     - label: "Website"
