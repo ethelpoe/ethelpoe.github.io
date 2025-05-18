@@ -1,5 +1,5 @@
 ---
-title: "Semana 1: Sistemas Numéricos y Señales Digitales"
+title: "Circuitos Digitales - 1: Sistemas Numéricos"
 date: 2025-05-17T00:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -185,3 +185,24 @@ Para practicar estos conceptos, recomendamos:
 4. Convertir FF₁₆ a todos los otros sistemas
 
 *Recuerda: La práctica constante es clave para dominar las conversiones entre sistemas numéricos.*
+
+*Los sistemas numéricos son la base fundamental para comprender el funcionamiento de los sistemas digitales.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-2-algebra-boole.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 2: Álgebra de Boole →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

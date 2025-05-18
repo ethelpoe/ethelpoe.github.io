@@ -1,5 +1,5 @@
 ---
-title: "Semana 7: Clases Abstractas y Herencia en C++"
+title: "C++ POO - 7: Patrones de Diseño"
 date: 2025-05-17T13:00:00-04:00
 categories:
   - Programación II
@@ -279,3 +279,30 @@ public:
 - [C++ Inheritance](https://en.cppreference.com/w/cpp/language/inheritance)
 - [Virtual Functions](https://en.cppreference.com/w/cpp/language/virtual)
 - [SOLID Principles in C++](https://en.wikipedia.org/wiki/SOLID)
+
+*Los patrones de diseño y las clases abstractas son herramientas poderosas para crear código flexible y reutilizable.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-6-programacion-II.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← C++ POO - 6: Manejo de Excepciones
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-8-programacion-II.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      C++ POO - 8: Proyecto Final →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

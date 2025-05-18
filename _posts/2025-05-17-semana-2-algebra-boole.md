@@ -1,5 +1,5 @@
 ---
-title: "Semana 2: Álgebra de Boole y Compuertas Lógicas"
+title: "Circuitos Digitales - 2: Álgebra de Boole"
 date: 2025-05-17T01:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -169,4 +169,29 @@ Carry = A AND B
 4. Verifica el funcionamiento con todos los casos posibles
 5. Documenta el diseño y su funcionamiento
 
-*Recuerda: La práctica con herramientas de simulación es fundamental para dominar el diseño de circuitos digitales.*
+*El álgebra de Boole y las compuertas lógicas son los bloques fundamentales para construir circuitos digitales.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-1-sistemas-numericos.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 1: Sistemas Numéricos
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-3-simplificacion-circuitos.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 3: Simplificación de Circuitos →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

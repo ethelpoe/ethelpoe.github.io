@@ -1,5 +1,5 @@
 ---
-title: "Semana 6: Programación Basada en Eventos e Inputs en C++"
+title: "C++ POO - 6: Manejo de Excepciones"
 date: 2025-05-17T12:30:00-04:00
 categories:
   - Programación II
@@ -295,3 +295,30 @@ public:
 - [C++ Input/Output library](http://www.cplusplus.com/reference/iostream/)
 - [Command Pattern en C++](https://refactoring.guru/design-patterns/command/cpp/example)
 - [Event-Driven Programming](https://en.wikipedia.org/wiki/Event-driven_programming)
+
+*El manejo efectivo de eventos y estados es crucial para crear aplicaciones interactivas robustas.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-5-programacion-II.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← C++ POO - 5: Plantillas y STL
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-7-programacion-II.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      C++ POO - 7: Patrones de Diseño →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

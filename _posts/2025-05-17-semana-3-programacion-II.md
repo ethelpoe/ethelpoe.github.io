@@ -1,5 +1,5 @@
 ---
-title: "Semana 3: Encapsulamiento y Buenas Prácticas en C++"
+title: "C++ POO - 3: Herencia y Polimorfismo"
 date: 2025-05-17T11:00:00-04:00
 categories:
   - Programación II
@@ -226,3 +226,30 @@ public:
 - [C++ Core Guidelines sobre clases](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#c-classes-and-class-hierarchies)
 - [Tutorial sobre encapsulamiento](https://www.learncpp.com/cpp-tutorial/81-welcome-to-object-oriented-programming/)
 - [Ejemplos de buenas prácticas en C++](https://github.com/isocpp/CppCoreGuidelines)
+
+*El encapsulamiento y las buenas prácticas son esenciales para crear código mantenible y reutilizable.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-2-programacion-II.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← C++ POO - 2: Estructura de Clases
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-4-programacion-II.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      C++ POO - 4: Composición y Agregación →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

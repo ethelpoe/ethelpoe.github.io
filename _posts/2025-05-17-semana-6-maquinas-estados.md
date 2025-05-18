@@ -1,5 +1,5 @@
 ---
-title: "Semana 6: Máquinas de Estados - Moore y Mealy"
+title: "Circuitos Digitales - 6: Máquinas de Estados"
 date: 2025-05-17T05:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -232,3 +232,28 @@ Para implementar FSMs en [CircuitVerse](https://circuitverse.org/):
 - Resultados esperados
 
 *Recuerda: El diseño de FSM requiere una planificación cuidadosa y una documentación clara. La elección entre Moore y Mealy dependerá de los requisitos específicos de tu aplicación.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-5-circuitos-secuenciales.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 5: Circuitos Secuenciales
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-7-integracion-sistema.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 7: Integración de Sistemas →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

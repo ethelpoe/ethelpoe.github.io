@@ -1,5 +1,5 @@
 ---
-title: "Semana 4: Circuitos Combinacionales"
+title: "Circuitos Digitales - 4: Circuitos Combinacionales"
 date: 2025-05-17T03:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -203,4 +203,29 @@ Para implementar estos circuitos, recomendamos usar [CircuitVerse](https://circu
    - Issue: Retardos acumulativos
    - Solución: Minimizar niveles de lógica
 
-*Recuerda: Los circuitos combinacionales son los bloques fundamentales para construir sistemas digitales más complejos. La práctica y la simulación son esenciales para dominar su diseño.*
+*Los circuitos combinacionales son bloques fundamentales para construir sistemas digitales complejos.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-3-simplificacion-circuitos.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 3: Simplificación de Circuitos
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-5-circuitos-secuenciales.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 5: Circuitos Secuenciales →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

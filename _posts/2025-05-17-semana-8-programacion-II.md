@@ -1,5 +1,5 @@
 ---
-title: "Semana 8: Proyecto Integrador de POO en C++"
+title: "C++ POO - 8: Proyecto Final"
 date: 2025-05-17T13:30:00-04:00
 categories:
   - Programación II
@@ -10,6 +10,27 @@ tags:
   - Integración
   - Sistema Completo
 ---
+
+*El proyecto final integra todos los conceptos aprendidos en un sistema completo y funcional.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-7-programacion-II.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← C++ POO - 7: Patrones de Diseño
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>
 
 Esta semana final desarrollaremos un proyecto integrador que combina todos los conceptos aprendidos en un sistema de gestión académica.
 

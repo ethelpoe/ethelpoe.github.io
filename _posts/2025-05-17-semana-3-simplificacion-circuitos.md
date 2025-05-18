@@ -1,5 +1,5 @@
 ---
-title: "Semana 3: Simplificación de Circuitos"
+title: "Circuitos Digitales - 3: Simplificación de Circuitos"
 date: 2025-05-17T02:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -170,4 +170,29 @@ F = A'B' + BC'
    - Retardo de propagación
    - Disponibilidad de componentes
 
-*Recuerda: Una buena simplificación puede reducir significativamente la complejidad y el costo de tu circuito.*
+*La simplificación de circuitos es esencial para optimizar el rendimiento y reducir costos.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-2-algebra-boole.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 2: Álgebra de Boole
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-4-circuitos-combinacionales.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 4: Circuitos Combinacionales →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

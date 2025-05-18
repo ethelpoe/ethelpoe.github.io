@@ -1,5 +1,5 @@
 ---
-title: "Semana 4: Arreglos, Vectores y Ciclos Aplicados en C++"
+title: "C++ POO - 4: Composición y Agregación"
 date: 2025-05-17T11:30:00-04:00
 categories:
   - Programación II
@@ -240,3 +240,30 @@ class Grupo {
 - [Tutorial de STL en cplusplus.com](http://www.cplusplus.com/reference/stl/)
 - [C++ Reference - Vector](https://en.cppreference.com/w/cpp/container/vector)
 - [Ejemplos de algoritmos STL](https://en.cppreference.com/w/cpp/algorithm)
+
+*La comprensión de las estructuras de datos es fundamental para el desarrollo de aplicaciones eficientes.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-3-programacion-II.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← C++ POO - 3: Herencia y Polimorfismo
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-5-programacion-II.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      C++ POO - 5: Plantillas y STL →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

@@ -1,5 +1,5 @@
 ---
-title: "Semana 5: Circuitos Secuenciales"
+title: "Circuitos Digitales - 5: Circuitos Secuenciales"
 date: 2025-05-17T04:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -231,4 +231,29 @@ Para implementar estos circuitos, usa [CircuitVerse](https://circuitverse.org/):
    - Tabla de transiciones
    - Timing diagrams
 
-*Recuerda: Los circuitos secuenciales son más complejos que los combinacionales. La simulación y las pruebas exhaustivas son cruciales para su correcto funcionamiento.*
+*Los circuitos secuenciales son esenciales para sistemas que requieren memoria y estados.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-4-circuitos-combinacionales.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 4: Circuitos Combinacionales
+    </a>
+  </div>
+  
+  <div class="nav-next">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-6-maquinas-estados.md %}" class="next-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">
+      Circuitos Digitales - 6: Máquinas de Estados →
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>

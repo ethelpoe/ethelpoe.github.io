@@ -1,5 +1,5 @@
 ---
-title: "Semana 8: Pantalla Holográfica POV - Proyecto Final"
+title: "Circuitos Digitales - 8: Proyecto Final"
 date: 2025-05-17T08:00:00-04:00
 categories:
   - Circuitos Digitales
@@ -316,3 +316,22 @@ void setupBluetooth() {
 - Mejoras propuestas
 
 *Este proyecto final permite a los estudiantes integrar conocimientos de electrónica digital, programación y mecánica, mientras crean un dispositivo visualmente impactante que demuestra principios fundamentales de la persistencia de la visión.*
+
+---
+
+<div class="navigation-buttons">
+  <div class="nav-previous">
+    <a href="{{ site.baseurl }}{% link _posts/2025-05-17-semana-7-integracion-sistema.md %}" class="previous-button" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 10px;">
+      ← Circuitos Digitales - 7: Integración de Sistemas
+    </a>
+  </div>
+</div>
+
+<style>
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+</style>
