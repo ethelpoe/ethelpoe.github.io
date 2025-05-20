@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Visualización de Datos con Matplotlib y Seaborn: Una Guía Práctica"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Visualización]
 tags: [matplotlib, seaborn, python, data-visualization]
-toc: true
 ---
 
 # Visualización de Datos con Matplotlib y Seaborn
