@@ -1,10 +1,9 @@
 ---
-layout: post
 title: "NumPy: El Pilar Fundamental del Análisis Numérico en Python"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Python]
 tags: [numpy, arrays, computacion-cientifica, data-science]
-toc: true
+
 ---
 
 # NumPy: La Base de la Computación Científica en Python
