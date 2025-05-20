@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Pandas: La Herramienta Definitiva para Manipulación y Análisis de Datos"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Python]
 tags: [pandas, data-analysis, data-science, python]
-toc: true
 ---
 
 # Pandas: Dominando el Análisis de Datos en Python
