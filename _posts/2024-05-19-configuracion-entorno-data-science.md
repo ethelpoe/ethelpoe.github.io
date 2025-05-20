@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Configuración del Entorno de Desarrollo para Data Science"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Configuración]
 tags: [python, vscode, git, entorno-desarrollo]
-toc: true
 ---
 
 # Configuración Profesional del Entorno de Desarrollo para Data Science
