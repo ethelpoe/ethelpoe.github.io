@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Análisis de Datos y Estadística Aplicada: De la Teoría a la Práctica"
-date: 2024-05-19
+date: 2025-05-17T00:00:00-04:00
 categories: [Tutorial, Análisis de Datos]
 tags: [python, estadistica, analisis-datos, preprocesamiento]
 toc: true
