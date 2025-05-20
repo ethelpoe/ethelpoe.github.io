@@ -1,10 +1,8 @@
 ---
-layout: post
 title: "Fundamentos de Deep Learning con PyTorch"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Deep Learning]
 tags: [pytorch, neural-networks, deep-learning, transfer-learning]
-toc: true
 ---
 
 # Deep Learning Básico con PyTorch
