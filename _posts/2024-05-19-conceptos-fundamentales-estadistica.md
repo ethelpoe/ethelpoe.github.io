@@ -1,7 +1,6 @@
 ---
-layout: post
 title: "Conceptos Fundamentales de Estadística para Análisis de Datos"
-date: 2024-05-19
+date: 2024-05-17T00:00:00-04:00
 categories: [Tutorial, Estadística]
 tags: [estadistica, analisis-datos, conceptos-basicos]
 toc: true
