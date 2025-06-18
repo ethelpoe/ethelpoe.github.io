@@ -14,7 +14,7 @@ El blog cubre temas como:
 ## Posts Destacados
 
 - [Control de Acceso con ESP32 y LinkedList](/blog/Control-Acceso-ESP32-LinkedList/) - Tutorial completo sobre implementación de sistemas de control de acceso
-- [Mi Primera Entrada](/_posts/2025-05-17-mi-primera-entrada.md/) - Post inaugural del blog
+- [Mi Primera Entrada](https://ethelpoe.github.io/blog/mi-primera-entrada/) - Post inaugural del blog
 
 ## Tecnologías
 
