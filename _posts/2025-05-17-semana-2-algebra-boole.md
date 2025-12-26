@@ -15,7 +15,7 @@ En esta segunda semana del curso de Circuitos Digitales, exploraremos los fundam
 
 ## Compuertas Lógicas Básicas
 
-<img src="/assets/images/image.png" alt="Compuerta AND" width="300" />
+<img src="/assets/images/image.png" alt="Compuerta AND" width="300" height=300/>
 
 - Símbolo: &
 - Operación: Salida = 1 solo si todas las entradas son 1
