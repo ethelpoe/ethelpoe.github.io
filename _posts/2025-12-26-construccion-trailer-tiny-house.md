@@ -15,7 +15,7 @@ tags:
 
 ## Introducción
 
-Construir una tiny house sobre un trailer es un proyecto emocionante que combina carpintería, conocimientos de construcción y creatividad. Este tipo de vivienda móvil ofrece libertad, sostenibilidad y la oportunidad de vivir de manera minimalista.
+Construir una tiny house sobre un trailer es un proyecto emocionante que combina carpintería, conocimientos de construcción y creatividad. Este tipo de vivienda móvil ofrece libertad, sostenibilidad y la oportunidad de vivir de manera minimalista (ademas se supone que es mas economica, pero no hablaremos de eso hoy tsssss).
 
 ## Parte 1: Construcción del Trailer
 
@@ -30,28 +30,7 @@ Construir una tiny house sobre un trailer es un proyecto emocionante que combina
 
 ### Pasos para Construir el Trailer
 
-1. **Diseño y Planificación**
-   - Determina las dimensiones (largo, ancho, altura permitida)
-   - Calcula el peso total estimado
-   - Verifica regulaciones locales sobre dimensiones de remolques
-
-2. **Construcción del Chasis**
-   - Corta las vigas de acero según las medidas
-   - Suelda el marco principal
-   - Instala vigas transversales para soporte adicional
-   - Añade refuerzos en las esquinas
-
-3. **Instalación del Sistema de Rodaje**
-   - Instala el eje (simple o doble según el peso)
-   - Monta las ruedas y neumáticos
-   - Instala el sistema de frenos
-   - Conecta el enganche de remolque
-
-4. **Acabados del Trailer**
-   - Aplica tratamiento anticorrosivo
-   - Pinta el chasis
-   - Instala luces de señalización
-   - Añade cadenas de seguridad
+poner imagen aqui...
 
 ## Parte 2: Construcción de la Tiny House
 
