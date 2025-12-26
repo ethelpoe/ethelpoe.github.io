@@ -11,11 +11,11 @@ tags:
   - DIY
 ---
 
-¡Bienvenidos a esta guía completa sobre cómo construir un trailer y una tiny house! En este artículo compartiré información detallada sobre el proceso de construcción, desde la base del trailer hasta la estructura de la casa. 
+¡Bienvenidos a esta guía completa sobre cómo construir un trailer y una tiny house! En este artículo compartiré información detallada sobre el proceso de construcción, desde la base del trailer hasta los acabados finales de tu hogar móvil.
 
 ## Introducción
 
-Construir una tiny house sobre un trailer es un proyecto emocionante que combina carpintería, conocimientos de construcción y creatividad. Este tipo de vivienda móvil ofrece libertad, sostenibilidad y la oportunidad de vivir de manera minimalista (ademas se supone que es mas economica, pero no hablaremos de eso hoy tsssss).
+Construir una tiny house sobre un trailer es un proyecto emocionante que combina carpintería, conocimientos de construcción y creatividad. Este tipo de vivienda móvil ofrece libertad, sostenibilidad y la oportunidad de simplificar tu vida.
 
 ## Parte 1: Construcción del Trailer
 
@@ -30,7 +30,7 @@ Construir una tiny house sobre un trailer es un proyecto emocionante que combina
 
 ### Pasos para Construir el Trailer
 
-poner imagen aqui...
+![Plano del trailer para tiny house](/assets/images/plano-trailer-tiny-house.jpg)
 
 ## Parte 2: Construcción de la Tiny House
 
@@ -131,7 +131,7 @@ poner imagen aqui...
 
 ## Conclusión
 
-Construir un trailer y una tiny house es un proyecto ambicioso pero muy gratificante. Requiere planificación cuidadosa, habilidades de construcción y paciencia. El resultado es una vivienda única, personalizada y móvil que puede llevarte a donde quieras. 
+Construir un trailer y una tiny house es un proyecto ambicioso pero muy gratificante. Requiere planificación cuidadosa, habilidades de construcción y paciencia. El resultado es una vivienda única y personalizada que refleja tu estilo de vida y valores.
 
 Recuerda siempre priorizar la seguridad, tanto en la construcción como en el uso posterior de tu tiny house. ¡Buena suerte con tu proyecto!
 
