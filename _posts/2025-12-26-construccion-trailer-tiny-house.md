@@ -30,7 +30,7 @@ Construir una tiny house sobre un trailer es un proyecto emocionante que combina
 
 ### Pasos para Construir el Trailer
 
-![Plano del trailer para tiny house](/assets/images/plano-trailer-tiny-house.jpg)
+<img src="/assets/images/plano-trailer-tiny-house.jpg" alt="Plano del trailer para tiny house" width="300" />
 
 ## Parte 2: Construcción de la Tiny House
 
