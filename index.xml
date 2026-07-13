@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Francisco Macias</title>
+      <link>https://ethelpoe.github.io</link>
+      <description>Últimas 10 notas on Francisco Macias</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>Francisco Macias</title>
+    <link>https://ethelpoe.github.io/</link>
+    <guid>https://ethelpoe.github.io/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Fri, 10 Jul 2026 18:46:07 GMT</pubDate>
+  </item><item>
+    <title>Blog</title>
+    <link>https://ethelpoe.github.io/Blog/</link>
+    <guid>https://ethelpoe.github.io/Blog/</guid>
+    <description><![CDATA[  ]]></description>
+    <pubDate>Fri, 10 Jul 2026 18:20:15 GMT</pubDate>
+  </item><item>
+    <title>Guía para Construir un Trailer y una Tiny House</title>
+    <link>https://ethelpoe.github.io/Blog/construccion-trailer-tiny-house</link>
+    <guid>https://ethelpoe.github.io/Blog/construccion-trailer-tiny-house</guid>
+    <description><![CDATA[ Introducción Construir una tiny house sobre un trailer es un proyecto emocionante que combina carpintería, conocimientos de construcción y creatividad. ]]></description>
+    <pubDate>Fri, 26 Dec 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Domotica Semana 2</title>
+    <link>https://ethelpoe.github.io/Blog/Domotica-Semana2</link>
+    <guid>https://ethelpoe.github.io/Blog/Domotica-Semana2</guid>
+    <description><![CDATA[ MAESTRÍA EN DOMÓTICA Y SUSTENTABILIDAD ASIGNATURA: DOMÓTICA (MDDO-324) SISTEMAS DE COMUNICACIÓN EN DOMÓTICA Semana 2: Sistemas de Comunicación y Topología de Red OBJETIVOS DE APRENDIZAJE Al finalizar esta unidad, el estudiante podrá: Comprender los diferentes sistemas de comunicación en instalacione... ]]></description>
+    <pubDate>Sat, 24 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Protocolos de Comunicación en Domótica</title>
+    <link>https://ethelpoe.github.io/Blog/Protocolos-Comunicacion-Domotica</link>
+    <guid>https://ethelpoe.github.io/Blog/Protocolos-Comunicacion-Domotica</guid>
+    <description><![CDATA[ PROTOCOLOS DE COMUNICACIÓN EN DOMÓTICA Implementaciones Prácticas y Ejemplos 1. ]]></description>
+    <pubDate>Sat, 24 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Guía Completa: Punteros y Gestión de Memoria en C++</title>
+    <link>https://ethelpoe.github.io/Blog/guia-punteros-cpp</link>
+    <guid>https://ethelpoe.github.io/Blog/guia-punteros-cpp</guid>
+    <description><![CDATA[ Esta guía de referencia cubre todo lo que necesitas saber sobre punteros en C++, desde los conceptos básicos hasta las mejores prácticas modernas. ]]></description>
+    <pubDate>Sat, 17 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Micro Dron ESP32 con Motores Coreless 615</title>
+    <link>https://ethelpoe.github.io/Blog/micro-dron-esp32-615</link>
+    <guid>https://ethelpoe.github.io/Blog/micro-dron-esp32-615</guid>
+    <description><![CDATA[ Diferencias con la Versión Original Motores: Coreless 615 en lugar de brushless 0603 Voltaje nominal: 3.7V RPM: ~42000 @ 3.7V Corriente máxima: ~1A ESCs: No requiere ESCs tradicionales Usa MOSFETs directamente Control PWM simple Batería: LiPo 1S 3.7V 300mAh (más pequeña) Tiempo de vuelo: ~5 minutos ... ]]></description>
+    <pubDate>Sat, 17 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Construyendo un Micro Dron FPV con ESP32</title>
+    <link>https://ethelpoe.github.io/Blog/micro-dron-esp32</link>
+    <guid>https://ethelpoe.github.io/Blog/micro-dron-esp32</guid>
+    <description><![CDATA[ Este proyecto implementa un controlador de vuelo completo para un micro dron FPV usando ESP32. ]]></description>
+    <pubDate>Sat, 17 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>Radio Control para Dron ESP32</title>
+    <link>https://ethelpoe.github.io/Blog/radio-control-esp32</link>
+    <guid>https://ethelpoe.github.io/Blog/radio-control-esp32</guid>
+    <description><![CDATA[ Índice Índice Lista de Materiales {#lista-de-materiales} Componentes Principales Materiales Adicionales Esquema de Conexiones {#esquema-de-conexiones} Firmware del Transmisor {#firmware-del-transmisor} Protocolo de Comunicación {#protocolo-de-comunicación} Calibración {#calibración} Lista de Materia... ]]></description>
+    <pubDate>Sat, 17 May 2025 06:00:00 GMT</pubDate>
+  </item><item>
+    <title>C++ POO - 1: Reforzamiento y Abstracción</title>
+    <link>https://ethelpoe.github.io/Blog/semana-1-programacion-II</link>
+    <guid>https://ethelpoe.github.io/Blog/semana-1-programacion-II</guid>
+    <description><![CDATA[ Transición desde la programación estructurada hacia la orientada a objetos, usando como ejemplo una función para detectar números primos. ]]></description>
+    <pubDate>Sat, 17 May 2025 06:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
