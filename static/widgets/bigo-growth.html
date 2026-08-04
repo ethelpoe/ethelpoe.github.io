@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Visualizador de crecimiento Big O</title>
+<style>
+  :root{
+    --bg: #ebedea; --fg: #16191c; --muted:#6b7178; --card:#ffffff;
+    --line:#cdd1cb; --accent:#8f4c17; --accent2:#0a6a60;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#16191c; --fg:#ebedea; --muted:#9aa0a6; --card:#20242a;
+           --line:#333a41; --accent:#e08a3c; --accent2:#2bb3a3; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:var(--bg); color:var(--fg); padding:14px 16px 18px;
+  }
+  h2{font-size:1rem;margin:0 0 2px;font-weight:700}
+  .sub{color:var(--muted);font-size:.8rem;margin:0 0 14px}
+  .controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .nlabel{font-variant-numeric:tabular-nums;font-weight:700;min-width:120px}
+  .nlabel b{color:var(--accent);font-size:1.15rem}
+  input[type=range]{flex:1;min-width:160px;accent-color:var(--accent)}
+  .rows{display:flex;flex-direction:column;gap:8px}
+  .row{display:grid;grid-template-columns:96px 1fr auto;align-items:center;gap:10px}
+  .tag{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.82rem;font-weight:700}
+  .barwrap{background:var(--line);border-radius:6px;height:22px;overflow:hidden;position:relative;cursor:pointer}
+  .bar{height:100%;border-radius:6px;transition:width .18s ease;min-width:2px}
+  .cnt{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:.8rem;
+       font-variant-numeric:tabular-nums;text-align:right;min-width:112px;color:var(--muted)}
+  .row.off{opacity:.32}
+  .row.off .cnt{text-decoration:line-through}
+  .legend{margin-top:14px;font-size:.76rem;color:var(--muted);line-height:1.5}
+  .legend b{color:var(--fg)}
+  .verdict{margin-top:12px;padding:9px 12px;border-radius:8px;background:var(--card);
+           border:1px solid var(--line);font-size:.83rem}
+  .hint{color:var(--muted);font-size:.72rem;margin-top:6px}
+</style>
+</head>
+<body>
+  <h2>¿Qué tan rápido crece cada complejidad?</h2>
+  <p class="sub">Mueve <b>n</b> y observa cuántas operaciones hace cada algoritmo. Toca una barra para apagarla.</p>
+
+  <div class="controls">
+    <span class="nlabel">n = <b id="nval">16</b> elementos</span>
+    <input id="slider" type="range" min="1" max="64" value="16" step="1" aria-label="tamaño de la entrada n">
+  </div>
+
+  <div class="rows" id="rows"></div>
+
+  <div class="verdict" id="verdict"></div>
+
+  <p class="legend">
+    Barras en <b>escala logarítmica</b> (si fueran lineales, O(2ⁿ) se saldría de la pantalla — justo el punto).
+    Objetivo típico de entrevista: <b style="color:var(--accent2)">O(n)</b> u <b style="color:var(--accent2)">O(n log n)</b>.
+    Todo lo que sea <b style="color:var(--accent)">O(n²)</b> o peor: menciónalo y optimiza.
+  </p>
+  <p class="hint">Pregúntate: con n = 64, ¿cuántas veces más lento es O(n²) que O(n)? ¿Y O(2ⁿ)?</p>
+
+<script>
+  const classes = [
+    { key:"O(1)",       f: n => 1,                  color:"#0a6a60" },
+    { key:"O(log n)",   f: n => Math.log2(n),       color:"#2bb3a3" },
+    { key:"O(n)",       f: n => n,                  color:"#4c8f3c" },
+    { key:"O(n log n)", f: n => n*Math.log2(n),     color:"#c9a227" },
+    { key:"O(n²)",      f: n => n*n,                color:"#d17a1f" },
+    { key:"O(2ⁿ)",      f: n => Math.pow(2,n),      color:"#c0392b" },
+  ];
+  const off = new Set();
+  const rowsEl = document.getElementById("rows");
+  const slider = document.getElementById("slider");
+  const nval   = document.getElementById("nval");
+  const verdict= document.getElementById("verdict");
+
+  function fmt(x){
+    if(x < 1000) return (Math.round(x*10)/10).toString();
+    if(x < 1e6)  return Math.round(x).toLocaleString("es-MX");
+    return x.toExponential(2).replace("e+", " × 10^");
+  }
+
+  classes.forEach((c,i)=>{
+    const row = document.createElement("div");
+    row.className = "row"; row.dataset.i = i;
+    row.innerHTML =
+      `<span class="tag" style="color:${c.color}">${c.key}</span>`+
+      `<div class="barwrap"><div class="bar" style="background:${c.color}"></div></div>`+
+      `<span class="cnt"></span>`;
+    row.querySelector(".barwrap").addEventListener("click",()=>{
+      off.has(i) ? off.delete(i) : off.add(i); render();
+    });
+    rowsEl.appendChild(row);
+  });
+
+  function render(){
+    const n = +slider.value;
+    nval.textContent = n;
+    const vals = classes.map(c => c.f(n));
+    const logMax = Math.max(...vals.map(v => Math.log10(v+1)));
+    let on1 = null, onN2 = null;
+    document.querySelectorAll(".row").forEach(row=>{
+      const i = +row.dataset.i, v = vals[i];
+      row.classList.toggle("off", off.has(i));
+      const w = logMax > 0 ? (Math.log10(v+1)/logMax*100) : 2;
+      row.querySelector(".bar").style.width = w.toFixed(1)+"%";
+      row.querySelector(".cnt").textContent = fmt(v) + " ops";
+      if(classes[i].key==="O(n)")  on1  = v;
+      if(classes[i].key==="O(n²)") onN2 = v;
+    });
+    const exp = classes[5].f(n);
+    verdict.innerHTML =
+      `Con <b>n = ${n}</b>: O(n²) hace <b>${fmt(onN2)}</b> ops `+
+      `(${Math.round(onN2/on1)}× más que O(n)). `+
+      `O(2ⁿ) llega a <b>${fmt(exp)}</b> — `+
+      (exp > 1e9 ? "impensable en una entrevista." : "todavía manejable, pero explota rápido.");
+  }
+  slider.addEventListener("input", render);
+  render();
+</script>
+</body>
+</html>
